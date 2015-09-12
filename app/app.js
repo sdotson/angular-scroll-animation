@@ -61,7 +61,7 @@ angular.module('myApp',[])
                             change = (windowTop - sectionTop)/sectionHeight,
                             step = change < .5 ? 'part1-active' : 'part2-active';
 
-                            console.log(i);
+                            scope.slide = i;
 
                         angular.element(scenes).eq(index).removeClass('part1-active part2-active').addClass(step);
                         angular.element(scenes).removeClass('active soon-to-be-active').eq(index).addClass('active');
