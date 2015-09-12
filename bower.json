@@ -1,0 +1,31 @@
+{
+  "name": "capstone-project",
+  "version": "0.0.0",
+  "authors": [
+    "Stu <stuart@blueprintinteractive.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-animate": "~1.4.5",
+    "angular-chart.js": "~0.7.6",
+    "angular-resource": "~1.4.5",
+    "angular-route": "~1.4.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.4",
+    "jquery": "~2.1.4",
+    "jasmine-jquery": "~1.7.0"
+  },
+  "resolutions": {
+    "angular": "~1.4.4"
+  }
+}
