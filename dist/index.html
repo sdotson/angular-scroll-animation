@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Angular Scroll Animation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body ng-app="myApp" ng-controller="scrollController">
+    <div class="stage">
+        <div ng-view class="view"></div>
+    </div>
+    <div class="timer" scroll>
+        <div class="timer-section"></div>
+        <div class="timer-section"></div>
+        <div class="timer-section"></div>
+        <div class="timer-section"></div>
+        <div class="timer-section"></div>
+        <div class="timer-section"></div>
+    </div>
+    <!-- inject:vendor:js -->
+    <script src="vendor.min.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="production.min.js"></script>
+    <!-- endinject -->
+</body>
+</html>
