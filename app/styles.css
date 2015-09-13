@@ -29,15 +29,6 @@ body {
     transition: all 300ms linear;
 }
 
-.stage-scene.ng-show {
-    opacity: 1;
-    background: yellow;
-}
-
-.stage-scene.ng-hide {
-    opacity: 0;
-}
-
 .progress-bar {
     width: 250px;
     height: 40px;
@@ -82,4 +73,22 @@ body {
 .thank-you {
     background-color: red;
     color: #fff;
+}
+
+.view.ng-enter,
+.view.ng-leave {
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.view.ng-enter {
+    opacity: 0;
+}
+.view.ng-enter-active {
+    opacity: 1;
+}
+.view.ng-leave {
+    opacity: 1;
+}
+.view.ng-leave-active {
+    opacity: 0;
 }
