@@ -13,7 +13,7 @@ angular.module('myApp',[])
                     windowTop = $window.pageYOffset,
                     windowHeight = $window.outerHeight;
 
-                for (var i = 0; i < sections.length; i++) {
+                for (var i = 0, sectionsLength = sections.length; i < sectionsLength; i++) {
                    var sectionTop = angular.element(sections[i]).prop('offsetTop'),
                        sectionHeight = angular.element(sections[i]).prop('offsetHeight'),
                        sectionMidpoint = sectionTop + sectionHeight/2,
@@ -26,6 +26,7 @@ angular.module('myApp',[])
                             change = (windowTop - sectionTop)/sectionHeight;
 
                             scope.slide = i;
+                            scope.change = change;
 
                     };
                 };
