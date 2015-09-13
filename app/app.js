@@ -41,9 +41,9 @@ angular.module('myApp',[])
     });
 
 
-scrollController.$inject = [];
+scrollController.$inject = ['$scope'];
 
-function scrollController() {
-
+function scrollController($scope) {
+    $scope.slide = 0;
 }
 

@@ -3,33 +3,42 @@
     <title>Angular Scroll Animation</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="scrollController">
     <div class="stage">
-        <div class="stage-scene scene1" ng-show="slide === 0">
+        <div class="stage-scene welcome" ng-show="slide === 0">
+            <div class="content">
+                <h1>Welcome to the Angular Scrolling Demo page.</p>
+            </div>
+        </div>
+        <div class="stage-scene scene1" ng-show="slide === 1">
             <div class="content">
                 <h1>Scene 1</h1>
-                <p>{{change * 100 | number:0}}% of section {{slide + 1}} scrolled.</p>
+                <p>{{change * 100 | number:0}}% of section {{slide}} scrolled.</p>
+                <div class="progress-bar" style="background-position:-{{change * 100 | number:0}}%"></div>
             </div>
         </div>
-        <div class="stage-scene scene2" ng-show="slide === 1">
+        <div class="stage-scene scene2" ng-show="slide === 2">
             <div class="content">
                 <h1>Scene 2</h1>
-                <p>{{change * 100 | number:0}}% of section {{slide + 1}} scrolled.</p>
+                <p>{{change * 100 | number:0}}% of section {{slide}} scrolled.</p>
+                <div class="progress-bar" style="background-position:-{{change * 100 | number:0}}%"></div>
             </div>
         </div>
-        <div class="stage-scene scene3" ng-show="slide === 2">
+        <div class="stage-scene scene3" ng-show="slide === 3">
             <div class="content">
                 <h1>Scene 3</h1>
-                <p>{{change * 100 | number:0}}% of section {{slide + 1}} scrolled.</p>
+                <p>{{change * 100 | number:0}}% of section {{slide}} scrolled.</p>
+                <div class="progress-bar" style="background-position:-{{change * 100 | number:0}}%"></div>
             </div>
         </div>
-        <div class="stage-scene scene4" ng-show="slide === 3">
+        <div class="stage-scene scene4" ng-show="slide === 4">
             <div class="content">
                 <h1>Scene 4</h1>
-                <p>{{change * 100 | number:0}}% of section {{slide + 1}} scrolled.</p>
+                <p>{{change * 100 | number:0}}% of section {{slide}} scrolled.</p>
+                <div class="progress-bar" style="background-position:-{{change * 100 | number:0}}%"></div>
             </div>
         </div>
-        <div class="stage-scene scene5" ng-show="slide === 4">
+        <div class="stage-scene thank-you" ng-show="slide === 5">
             <div class="content">
                 <h1>Thank you</h1>
                 <p>for viewing this demo!</p>
@@ -37,6 +46,7 @@
         </div>
     </div>
     <div class="timer" scroll>
+        <div class="timer-section"></div>
         <div class="timer-section"></div>
         <div class="timer-section"></div>
         <div class="timer-section"></div>
