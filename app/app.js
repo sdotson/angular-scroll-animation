@@ -1,4 +1,4 @@
-angular.module('myApp',[])
+angular.module('myApp',['ngAnimate'])
 
     .controller('scrollController', scrollController)
 

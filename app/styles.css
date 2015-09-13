@@ -24,6 +24,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+.stage-scene.ng-show {
+    opacity: 1;
+    background: yellow;
+}
+
+.stage-scene.ng-hide {
+    opacity: 0;
 }
 
 .progress-bar {
