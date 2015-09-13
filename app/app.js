@@ -21,9 +21,13 @@ angular.module('myApp',[])
                        windowMidpoint = windowTop + windowHeight/2,
                        windowBottom = windowTop + windowHeight;
 
+                    if (i === 3) {
+                        console.log(windowTop + " " + sectionTop + " " + sectionHeight);
+                    };
+
                    if (windowTop > sectionTop && windowTop < sectionBottom) {
                         var index = i,
-                            change = (windowTop - sectionTop)/sectionHeight;
+                            change = (windowTop - sectionTop)/(sectionHeight);
 
                             scope.slide = i;
                             scope.change = change;
