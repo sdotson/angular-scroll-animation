@@ -43,17 +43,16 @@ gulp.task('test', function() {
     });
 });
 
-var files = ['app/assets/css/*.css',
+var files = ['app/*.css',
             'app/bower_components/angular/angular.js',
             'app/bower_components/angular-route/angular-route.js',
             'app/bower_components/angular-animate/angular-animate.js',
-            'app/bower_components/angular-resource/angular-resource.js',
             'app/app.js',
             'app/production.min.js',
             'app/production.min.js.map',
             'app/vendor.min.js',
             'app/vendor.min.js.map',
-            'app/index.html',
+            'app/*.html',
             ];
 
 var jsFiles = [
