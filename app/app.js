@@ -5,7 +5,7 @@ angular.module('myApp',[])
     .directive('scroll', function($window) {
         return function(scope, el, attrs) {
 
-            var sections = document.getElementsByClassName('timer-section');
+            var sections = el.find('div');
 
             angular.element($window).bind("scroll", function () {
 
@@ -15,7 +15,7 @@ angular.module('myApp',[])
 
                 for (var i = 0; i < sections.length; i++) {
                    var sectionTop = angular.element(sections[i]).prop('offsetTop'),
-                       sectionHeight = angular.element(sections[i]).prop('offsetTop'),
+                       sectionHeight = angular.element(sections[i]).prop('offsetHeight'),
                        sectionMidpoint = sectionTop + sectionHeight/2,
                        sectionBottom = sectionTop + sectionHeight,
                        windowMidpoint = windowTop + windowHeight/2,
@@ -26,7 +26,7 @@ angular.module('myApp',[])
                             change = (windowTop - sectionTop)/sectionHeight;
 
                             scope.slide = i;
-                        
+
                     };
                 };
                  
